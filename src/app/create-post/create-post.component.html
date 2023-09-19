@@ -1,0 +1,14 @@
+<div>
+  <h2>Criar Nova Postagem</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="title">Título:</label>
+      <input type="text" id="title" [(ngModel)]="postTitle" name="title" required>
+    </div>
+    <div>
+      <label for="content">Conteúdo:</label>
+      <textarea id="content" [(ngModel)]="postContent" name="content" required></textarea>
+    </div>
+    <button type="submit">Criar Postagem</button>
+  </form>
+</div>
